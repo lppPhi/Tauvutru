@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babylon.js - Space Shooter (No Server)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Nhúng thư viện Babylon.js từ CDN -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <!-- Optional: Thư viện GUI nếu muốn giao diện phức tạp hơn -->
+    <!-- <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script> -->
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <div id="ui">
+        <div id="score">Score: 0</div>
+        <div id="instructions">A/D: Xoay | W: Tăng tốc | Space: Bắn</div>
+    </div>
+    <div id="gameOver" class="hidden">
+        <h2>GAME OVER!</h2>
+        <p>Điểm: <span id="finalScore">0</span></p>
+        <p>Mở lại file để chơi lại.</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
